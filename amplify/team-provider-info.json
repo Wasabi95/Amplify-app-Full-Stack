@@ -17,6 +17,9 @@
       },
       "api": {
         "amplifyappfullstack": {}
+      },
+      "storage": {
+        "s3c7fefc1b": {}
       }
     }
   }

@@ -47,9 +47,9 @@ const App = ({ signOut }) => {
     const data = {
       name: form.get("name"),
       description: form.get("description"),
-      image: image.name,
+      image: image ? image.name : null, // Check if image is selected, otherwise set it to null
     };
-    if (!!data.image) await Storage.put(data.name, image);
+    if (data.image) await Storage.put(data.name, image);
     await API.graphql({
       query: createNoteMutation,
       variables: { input: data },
@@ -57,6 +57,7 @@ const App = ({ signOut }) => {
     fetchNotes();
     event.target.reset();
   }
+  
   
 
   async function deleteNote({ id, name }) {
