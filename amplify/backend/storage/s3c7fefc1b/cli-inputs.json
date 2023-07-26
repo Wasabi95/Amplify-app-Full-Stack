@@ -1,0 +1,14 @@
+{
+  "resourceName": "s3c7fefc1b",
+  "policyUUID": "c7fefc1b",
+  "bucketName": "bucket-notes-app",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
