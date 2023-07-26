@@ -39,7 +39,10 @@ const App = ({ signOut }) => {
     );
     setNotes(notesFromAPI);
   }
-
+//The error you are encountering, "Cannot read properties of null (reading 'name')",
+// is likely happening when trying to access the name property of the image input element in the 
+//form. This error occurs when there is no file selected for the image input, and thus, 
+//the image element is null.
   async function createNote(event) {
     event.preventDefault();
     const form = new FormData(event.target);
