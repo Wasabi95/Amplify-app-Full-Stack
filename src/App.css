@@ -1,38 +1,82 @@
+/* App.css */
+
 .App {
-  text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+th, td {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #e5e5e5;
+}
+
+.flex-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+/* App.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1rem;
+  background-color: #f0f0f0;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-title {
+  flex-grow: 1;
+}
+
+.navbar-title h1 {
+  margin: 0;
+}
+
+.navbar-login {
+  margin-left: 1rem;
+}
+
+/* Style the button */
+.navbar-login button {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* Add some spacing between icon and text */
+.navbar-login button svg {
+  margin-right: 0.5rem;
+}
+
+/* Style the button on hover */
+.navbar-login button:hover {
+  color: #007bff;
 }
